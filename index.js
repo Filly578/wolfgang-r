@@ -16,7 +16,7 @@ bot.on('message', msg=>{
   let args = msg.content.substring(PREFIX.length).split(" ");
     
  switch(args[0]){
-     case 'user':
+    case 'user':
          const user = new Discord.RichEmbed()
          .settitle('User Information')
          .addfield('Player Name', msg.author.username, true)
